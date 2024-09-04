@@ -12,9 +12,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -32,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/thamu-acn/blog-preview-card)
-- [Live site URL](https://thamu-acn.github.io/blog-preview-card/)
+- [Solution URL](https://github.com/thamu-acn/product-preview-card-component)
+- [Live site URL](https://thamu-acn.github.io/product-preview-card-component/)
 
 ## My process
 
