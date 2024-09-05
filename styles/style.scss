@@ -38,53 +38,54 @@ body {
     font-size: $fontSize;
     line-height: 1.5;
   }
-}
 
-.card-content {
-  padding: 1rem;
-}
+  &__content {
+    padding: 1rem;
+  }
 
-.card-image img {
-  border-top-left-radius: 0.625rem;
-  max-inline-size: 100%;
-}
+  &__image img {
+    border-top-left-radius: 0.625rem;
+    max-inline-size: 100%;
+  }
 
-.category {
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
-}
+  &__category {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+  }
 
-.card-title {
-  font-family: $fontHeading;
-  @include boldText();
-}
+  &__title {
+    font-family: $fontHeading;
+    @include boldText();
+  }
 
-.prices {
-  @include flexDisplay(start);
-  gap: 1rem;
-}
+  &__prices {
+    @include flexDisplay(start);
+    gap: 1rem;
+  }
 
-.new-price {
-  font-family: $fontHeading;
-  @include boldText();
-  color: $darkCyanColor;
-  font-size: 2rem;
-}
+  &__price--new {
+    font-family: $fontHeading;
+    @include boldText();
+    color: $darkCyanColor;
+    font-size: 2rem;
+  }
 
-.old-price {
-  text-decoration: line-through;
-}
+  &__price--old {
+    text-decoration: line-through;
+  }
 
-button {
-  background-color: $darkCyanColor;
-  border-radius: 0.625rem;
-  @include boldText();
-  color: $whiteColor;
-  width: 100%;
-  padding: 1rem;
-  &:hover {
-    background-color: $veryDarkGreenColor;
-    cursor: pointer;
+  &__button {
+    background-color: $darkCyanColor;
+    border-radius: 0.625rem;
+    @include boldText();
+    color: $whiteColor;
+    width: 100%;
+    padding: 1rem;
+
+    &:hover {
+      background-color: $veryDarkGreenColor;
+      cursor: pointer;
+    }
   }
 }
 
@@ -93,8 +94,12 @@ button {
     max-width: $mobileWidth;
   }
 
-  .card-image img {
-    border-top-right-radius: 0.625rem;
+  .card {
+    &__image img {
+      border-top-right-radius: 0.625rem;
+      width: $mobileWidth;
+      height: $mobileWidth * 0.6;
+    }
   }
 }
 
@@ -106,11 +111,11 @@ button {
   .card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
 
-  .card-image img {
-    border-bottom-left-radius: 0.625rem;
-    height: 100%;
-    object-fit: cover;
+    &__image img {
+      border-bottom-left-radius: 0.625rem;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }

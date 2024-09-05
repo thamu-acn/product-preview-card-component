@@ -18,45 +18,37 @@ body {
   font-size: 0.875rem;
   line-height: 1.5;
 }
-
-.card-content {
+.card__content {
   padding: 1rem;
 }
-
-.card-image img {
+.card__image img {
   border-top-left-radius: 0.625rem;
   max-inline-size: 100%;
 }
-
-.category {
+.card__category {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
 }
-
-.card-title {
+.card__title {
   font-family: "Fraunces", serif;
   font-weight: 700;
 }
-
-.prices {
+.card__prices {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 1rem;
 }
-
-.new-price {
+.card__price--new {
   font-family: "Fraunces", serif;
   font-weight: 700;
   color: hsl(158, 36%, 37%);
   font-size: 2rem;
 }
-
-.old-price {
+.card__price--old {
   text-decoration: line-through;
 }
-
-button {
+.card__button {
   background-color: hsl(158, 36%, 37%);
   border-radius: 0.625rem;
   font-weight: 700;
@@ -64,7 +56,7 @@ button {
   width: 100%;
   padding: 1rem;
 }
-button:hover {
+.card__button:hover {
   background-color: hsl(158, 96%, 10%);
   cursor: pointer;
 }
@@ -73,8 +65,10 @@ button:hover {
   .container {
     max-width: 24rem;
   }
-  .card-image img {
+  .card__image img {
     border-top-right-radius: 0.625rem;
+    width: 24rem;
+    height: 14.4rem;
   }
 }
 @media screen and (min-width: 48rem) {
@@ -85,7 +79,7 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .card-image img {
+  .card__image img {
     border-bottom-left-radius: 0.625rem;
     height: 100%;
     -o-object-fit: cover;
